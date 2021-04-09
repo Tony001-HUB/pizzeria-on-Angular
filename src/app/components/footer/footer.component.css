@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  padding: 5px 0px;
+}
+
+.footer__icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.social {
+  padding: 20px 0px;
+}
+
+a {
+  border-radius: 0px;
+  padding: 0px 10px;
+  color: #000;
+}
+.twitter a:hover {background: #00acee; color: #fff; border-radius: 10px }
+.instagram a:hover {background: #3f729b; color: #fff; border-radius: 10px }
+.facebook a:hover {background: #3b5998; color: #fff; border-radius: 10px }
+.vk a:hover {background: #5d84ae; color: #fff; border-radius: 10px }

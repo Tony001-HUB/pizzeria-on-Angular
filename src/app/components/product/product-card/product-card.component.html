@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="wrapper">
+  <div class="card__content">
+    <img class="card__img" src="{{product.photo}}" alt="" style="width:100%">
+    <h1>{{product.title}}</h1>
+    <p class="price">${{product.price}}</p>
+    <p>{{product.description}}</p>
+  </div>
+  <a>Добавить в корзину</a>
+  </div>
+  <pre class="none">{{product | json}}</pre>
+</div>
