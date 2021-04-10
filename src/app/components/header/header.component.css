@@ -6,6 +6,17 @@ a {
   padding: 10px 10px;
 }
 
+.home {
+  border: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.about {
+  border: 10px;
+  cursor: pointer;
+}
+
 .header{
   display: flex;
   flex-direction: column;

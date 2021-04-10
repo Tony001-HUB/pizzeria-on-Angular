@@ -11,11 +11,11 @@ export class AppComponent implements OnInit {
 
   products: Product[];
 
-  constructor(private dataHandler: DataHandlerService) { }
+  constructor() { }
 
   title = 'untitled';
 
   ngOnInit(): void {
-    this.dataHandler.productData.subscribe(product => this.products = product);
   }
 }
+

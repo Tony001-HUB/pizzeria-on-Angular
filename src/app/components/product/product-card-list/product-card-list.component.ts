@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Product} from "../../../models/product";
+import {DataHandlerService} from "../../../service/data-handler.service";
 
 @Component({
   selector: 'app-product-card-list',
@@ -8,10 +9,10 @@ import {Product} from "../../../models/product";
 })
 export class ProductCardListComponent implements OnInit {
 
-  @Input()  product: Product[];
-  constructor() { }
+  @Input()  products: Product[];
+  constructor(private dataHandler: DataHandlerService) { }
 
   ngOnInit(): void {
+    this.dataHandler.productData.subscribe(product => this.products = product);
   }
-
 }
