@@ -1,5 +1,6 @@
 .card {
-
+  max-width: 500px;
+  min-width: 200px;
 }
 
 .card__content {
@@ -24,7 +25,8 @@ a {
   text-align: center;
   cursor: pointer;
   width: 70%;
-  font-size: 18px;
+  font-size: 17px;
+  margin-bottom: 10px;
 }
 
 .card__content a:hover {
@@ -36,7 +38,7 @@ a {
 }
 
 .card__img {
-  width: 100%;
+  width: 270px;
   height: 280px;
 }
 
@@ -47,14 +49,16 @@ a {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
+  border: 4px double black;
+  border-radius: 5px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 0.2fr);
+  grid-template-columns: repeat(4, 0.2fr);
   justify-content: center;
-  grid-column-gap: 15px;
-  grid-row-gap: 13px;
+  grid-column-gap: 20px;
+  grid-row-gap: 60px;
   margin-top: 100px;
   margin-bottom: 100px;
 }

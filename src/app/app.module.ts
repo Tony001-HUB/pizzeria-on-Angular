@@ -9,11 +9,13 @@ import { ProductCardComponent } from './components/product/product-card/product-
 import {Route, RouterModule} from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
+import { IngredientsComponent } from './components/ingredients/ingredients.component';
 
 
 const routes: Route[] = [
   { path: 'about', component: AboutComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'ingredients', component: IngredientsComponent },
   { path: '', redirectTo: '/home', pathMatch:'full'}
 ];
 @NgModule({
@@ -24,7 +26,8 @@ const routes: Route[] = [
     ProductCardListComponent,
     ProductCardComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    IngredientsComponent
   ],
   imports: [
     BrowserModule,
