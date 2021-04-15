@@ -10,13 +10,18 @@ import {Route, RouterModule} from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { IngredientsComponent } from './components/ingredients/ingredients.component';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 
 const routes: Route[] = [
   { path: 'about', component: AboutComponent },
   { path: 'home', component: HomeComponent },
   { path: 'ingredients', component: IngredientsComponent },
-  { path: '', redirectTo: '/home', pathMatch:'full'}
+  { path: '', redirectTo: '/home', pathMatch:'full'},
+  { path: 'product/:id', component: ProductDetailComponent },
+
+  {path: '**' , component: NotFoundPageComponent}
 ];
 @NgModule({
   declarations: [
@@ -27,7 +32,9 @@ const routes: Route[] = [
     ProductCardComponent,
     AboutComponent,
     HomeComponent,
-    IngredientsComponent
+    IngredientsComponent,
+    NotFoundPageComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

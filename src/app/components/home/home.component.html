@@ -7,7 +7,7 @@
       <p class="price">${{product.price}}</p>
       <p>{{product.description}}</p>
     </div>
-    <a>Добавить в корзину</a>
+    <a routerLink="/product/{{product.id}}">Добавить в корзину</a>
   </div>
   <pre class="none">{{product | json}}</pre>
 </div>
