@@ -1,4 +1,5 @@
 import { Product } from "../models/product";
+import {User} from "../models/user";
 
 export class Data {
 
