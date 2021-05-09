@@ -1,8 +1,10 @@
 <div class="header">
   <h1>Pazzi per la pizza</h1>
-  <a class="header__btn-cart">
+  <a class="header__btn-cart" routerLink="/basket">
    <img src="https://www.pizzatempo.by/public/i/menu/ico-basket.svg" alt="">
+    <br>
   </a>
+  <a>Количество продуктов в корзине: {{cartService.getCountProductInCart()}}</a>
   <div class="menu">
     <a class="home" routerLink="/home">Home</a>
     <a class="about" routerLink="/about">About</a>

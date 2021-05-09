@@ -1,0 +1,14 @@
+<p>Ваша корзина: </p>
+<div class="grid">
+<div class="card" *ngFor="let item of productsInCart">
+  <div class="wrapper">
+    <div class="card__content">
+      <img class="card__img" src="{{item.photo}}" alt="" style="width:100%">
+      <h1>{{item.title}}</h1>
+      <p class="price">${{item.price}}</p>
+      <p>{{item.description}}</p>
+    </div>
+    <a (click)="onBuyBtnKeyUp(item)">Удалить</a>
+  </div>
+</div>
+</div>

@@ -14,14 +14,16 @@ import { NotFoundPageComponent } from './components/not-found-page/not-found-pag
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { UserComponent } from './components/user/user.component';
 import {RoleGuard} from "./guards/role.guard";
+import { BasketComponent } from './components/basket/basket.component';
 
 
 const routes: Route[] = [
   { path: 'about', component: AboutComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: ProductCardListComponent },
   { path: 'ingredients', component: IngredientsComponent, canActivate:[RoleGuard], data: {role: 'admin'}},
   { path: '', redirectTo: '/home', pathMatch:'full'},
   { path: 'product/:id', component: ProductDetailComponent },
+  { path: 'basket', component: BasketComponent},
 
   {path: '**' , component: NotFoundPageComponent}
 ];
@@ -37,7 +39,8 @@ const routes: Route[] = [
     IngredientsComponent,
     NotFoundPageComponent,
     ProductDetailComponent,
-    UserComponent
+    UserComponent,
+    BasketComponent
   ],
   imports: [
     BrowserModule,

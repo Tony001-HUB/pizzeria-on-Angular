@@ -48,10 +48,10 @@ export class Data {
     },
     {
       id: 3,
-      title: "Маргарита",
+      title: "Маргаритта",
       description: "сыр моцарелла, спелые помидоры и листья свежего базилика, которые придают ей неповторимый вкус и аромат.",
       isEnabled: true,
-      photo: "https://static.1000.menu/img/content-v2/ef/27/10853/picca-margarita-v-domashnix-usloviyax_1608783820_4_max.jpg",
+      photo: "https://images.dominos.by/media/dominos/osg/api/2018/09/12/spice.png",
       price: 8,
       weight: 30,
       category: {
@@ -72,7 +72,7 @@ export class Data {
       title: "Спайси",
       description: "Пепперони, Халапеньо, Сыр моцарелла, Томатный соус Domino's, Бекон, Томаты",
       isEnabled: true,
-      photo: "https://static.1000.menu/img/content-v2/24/88/49769/meksikanskaya-picca-ostraya_1597786186_13_max.jpg",
+      photo: "https://images.dominos.by/media/dominos/osg/api/2020/11/18/lesnaya_small.png",
       price: 18,
       weight: 30,
       category: {

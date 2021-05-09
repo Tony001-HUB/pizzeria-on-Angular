@@ -6,7 +6,7 @@
     <p class="price">${{product.price}}</p>
     <p>{{product.description}}</p>
   </div>
-  <a>Добавить в корзину</a>
+  <a (click)="onBuyBtnKeyUp()">Добавить в корзину</a>
   </div>
   <pre class="none">{{product | json}}</pre>
 </div>
