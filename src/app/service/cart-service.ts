@@ -41,11 +41,11 @@ export class CartService {
 
     productsArray = JSON.parse(productsArrayJson);
 
-    productsArray.push(productsArray.find(
-      currentProduct => currentProduct.id === product.id
-    ));
-    console.log(productsArray);
 
+    let index = productsArray.findIndex( currentProduct => currentProduct.id === product.id);
+    productsArray.splice(index, 1);
+
+    this.localStorageService.set("DATA", JSON.stringify(productsArray));
   }
 }
 
